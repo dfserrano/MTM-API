@@ -73,9 +73,10 @@ class SongRanking(Resource):
     @api.marshal_with(listOfRankingResponseModel)
     def get(self, id):
         """
-        List of rankings of a song
-        """            
-        rankings = Ranks.query.filter(Ranks.songId == id).order_by(Ranks.startDate)
-
-        return { 'data': rankings }
+        List of rankings of a song ordered by date
+        """       
+        # TODO: Implement
+        raise InvalidInputError('Method not implemented.')     
+        
+        return { 'data': '' }
 
