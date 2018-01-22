@@ -1,6 +1,6 @@
 # MTM-API
 
-MTM is an app used in the course CMPUT401 at the University of Alberta.  The application was developed by Diego Serrano during the Fall of 2017.
+MTM is an app used in the course CMPUT401 at the University of Alberta.  The application was developed by Diego Serrano during the Winter of 2018.
 
 ## Installation 
 
@@ -12,7 +12,7 @@ $ cd MTM-API
 
 Install virtualenv with pip
 ```sh
-$ sudo pip install virtualenv
+$ pip install virtualenv
 ```
 
 Create a new virtualenv and activate it
@@ -28,14 +28,9 @@ pip install Flask-SQLAlchemy
 pip install -U flask-cors
 ```
 
-Make sure the current working directory is on your PYTHONPATH:
+Run the application:
 ```sh
-export PYTHONPATH=.:$PYTHONPATH
-```
-
-Start the app
-```sh
-python mtm/app.py
+./run.sh
 ```
 
 The application will be available at port 8888.  Then, to access the Swagger API documentation, the address you have to type is:
